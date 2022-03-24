@@ -43,8 +43,8 @@
 <h2 class="post-list-heading">Posts</h2>
     <ul class="post-list"><li><span class="post-meta">Mar 9, 2022</span>
         <h3>
-          <a class="post-link" href="/src/jekyll/update/2022/03/09/welcome-to-jekyll.html">
-            Welcome to Jekyll!
+          <a class="post-link" href="/jekyll/update/2022/03/09/welcome-to-jekyll.html">
+            {{ site.post }}
           </a>
         </h3></li></ul>
 
@@ -56,19 +56,19 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{page.title}}</h2>
+    <h2 class="footer-heading">{{ site.title }}</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">{{page.title}}</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+          <li class="p-name">{{ site.title }}</li><li><a class="u-email" href="mailto:your-email@example.com">{{ site.email }}</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/j-paquette"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">j-paquette</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/j-paquette"><svg class="svg-icon"><use xlink:href="/assets/images/minima-social-icons.svg#github"></use></svg> <span class="username">{{ site.github_username }}</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>This site is for learning how to publish GitHub Pages.</p>
+        <p>{{ site.description }}</p>
       </div>
     </div>
 
