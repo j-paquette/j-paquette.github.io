@@ -1,0 +1,20 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "This repository is used to try out learn how to maintain the pages, add new content before adding it to the devcop site.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-paquette/j-paquette.github.io.git"
+  },
+  "license": "MIT",
+  "devDependencies":{
+    
+  }
+}
