@@ -15,5 +15,5 @@ Here is where I would put the content of this site.
 
 Here is where I would add more content.
 
-
+Check out the quotes: [Daily quotes]({{ '/' | absolute_url }}quotes/)
 

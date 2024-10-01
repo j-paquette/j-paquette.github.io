@@ -32,6 +32,9 @@ plugins:
   - jekyll-feed
   - jemoji
 
+include:
+  - _pages
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -41,6 +44,9 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+
+# To make sure that _site is created in the root, and not included in the build and npm test
+destination: ../_site
 
 # Conversion
 markdown            : kramdown
