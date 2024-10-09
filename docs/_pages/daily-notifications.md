@@ -1,11 +1,10 @@
 ---
 title: Quotes
-layout: daily-notification
+layout: 
 date: 2024-09-06
 categories: Quotes
-permalink: /quotes/
 include_scripts: [
-  "/assets/js/asyncDailyNotification.js"
+  "./docs/assets/js/asyncDailyNotification.js"
 ]
 ---
 <!-- markdownlint-capture -->
@@ -14,7 +13,7 @@ include_scripts: [
 
 {% for todayQuote in site.data.quotes.terryPratchett %}
 <section class="quote-app-container"  id="quote-responsive-container">
-  <blockquote class="blockquote random-quote-container">
+  <blockquote class="blockquote">
     <p class="mb-0" id="quote-text" >{{ todayQuote.quote }}</p>
     <footer class="book-footer" id="book-text">{{ todayQuote.book }}</footer>
   </blockquote>

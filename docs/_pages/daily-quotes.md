@@ -8,7 +8,7 @@ permalink: /quotes/
 ## Daily Quotes
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-{% for todayQuote in site.data.terryPratchettQuotes.terryPratchett %}
+{% for todayQuote in site.data.sampleQuotes.terryPratchett %}
   <blockquote class="blockquote random-quote-container">
     <p class="mb-0" id="quote-text" >{{ todayQuote.quote }}</p>
     <footer class="book-footer" id="book-text">{{ todayQuote.book }}</footer>
