@@ -5,16 +5,15 @@
         <meta name="viewport" content="width=device-width, inital-scale=1.0" >
         <title>{{page.title}}</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <!-- <script type="javascript" src="/assets/js/asyncDailyNotification.js"></script> -->
+        {% include custom-scripts.html %}
 
         {% seo %}
 
-        {% include quotesStyle.html %}
     </head>
     <body>
         <section class="quote-app-container"  id="quote-unique-container">
             {{ content }}
         </section>
-        <script type="javascript" src="/docs/assets/js/asyncDailyNotification.js"></script>
+        {% include custom-scripts.html %}
     </body>
 </html>

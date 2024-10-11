@@ -3,12 +3,16 @@ title: Quotes
 layout: daily-notification
 date: 2024-09-06
 permalink: /quotes/
+custom-javascript-list:
+  - "/assets/js/asyncDailyNotification.js"
+custom-css-list: 
+  - "/assets/css/quotesStyle.css"
 ---
 
 ## Daily Quotes
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-{% for todayQuote in site.data.sampleQuotes.terryPratchett %}
+{% for todayQuote in site.assets.js.sampleQuotes.terryPratchett %}
   <blockquote class="blockquote random-quote-container">
     <p class="mb-0" id="quote-text" >{{ todayQuote.quote }}</p>
     <footer class="book-footer" id="book-text">{{ todayQuote.book }}</footer>

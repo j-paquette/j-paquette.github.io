@@ -1,20 +1,8 @@
-//https://flaviocopes.com/fetch-api/
-//refer to the section: ES2017 async functions
-// (async () => {
-//     const response = await fetch('./sampleQuotes.json');
-//     const data = await response.json();
-//     const dataList = data.terryPratchett;
-//     randomQuotesData = getRandomQuote(dataList);
-//     console.log(quotesData);
-//     return quotesData;
-// })();
-
-//https://stackoverflow.com/questions/64683303/get-data-from-javascript-fetch-and-display-it-in-another-function
-let quotesData = () => fetch('./sampleQuotes.json')
+quotesData = () => fetch("/assets/js/sampleQuotes.json")
     .then((response) => {
         if(!response.ok) {
             throw new Error
-                (`HTTP error! Status: ${response.status}`);
+                (`HTTP error! Status: ${response.status}`);                
         }
         return response.json();
     })
@@ -69,4 +57,5 @@ function getRandomQuote(jsonData){
 
     return randomQuote;
 }
+
 

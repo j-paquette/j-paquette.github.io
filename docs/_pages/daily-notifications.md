@@ -2,15 +2,15 @@
 title: Quotes
 layout: 
 date: 2024-09-06
-categories: Quotes
 include_scripts: [
-  "./docs/assets/js/asyncDailyNotification.js"
+  "/docs/assets/js/asyncDailyNotification.js"
 ]
+categories: Quotes
 ---
+
+## Daily Quotes
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-<h2>Daily Quotes</h2>
-
 {% for todayQuote in site.data.quotes.terryPratchett %}
 <section class="quote-app-container"  id="quote-responsive-container">
   <blockquote class="blockquote">
